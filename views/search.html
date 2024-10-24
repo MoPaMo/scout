@@ -218,7 +218,7 @@
           if (!event.target.closest(".action-button")) {
             // Navigate to detail page
             console.log("Navigating to detail page");
-            alert("Navigating to detail page");
+
             window.location.href = "/lecture/abc"; // Uncomment and add your URL
           }
         }
@@ -226,8 +226,6 @@
         function handleWatchClick(event) {
           event.stopPropagation(); // Prevent the card click event
           console.log("Opening video player");
-          // Add your video player logic here
-          alert("Opening video player");
         }
 
         function handleInfoClick(event) {
