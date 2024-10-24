@@ -1,0 +1,10 @@
+{
+   "titel": "Partialbruchzerlegung - Reelle Partialbruchzerlegung",
+   "thema": "In diesem Teil der Vorlesung wird die reelle Partialbruchzerlegung behandelt, \n             einschließlich der Behandlung komplexer Pole und mehrfacher Pole.",
+   "tags": [ "Reelle Partialbruchzerlegung", "Komplexe Pole", "Mehrfache Pole", "Polynom-Division", "Fundamentalsatz der Algebra" ],
+   "wichtig": [ "eine rationale Funktion f(x) = p(x) / q(x) mit reellen Koeffizienten",
+                 "komplexe Nullstellen von q(x) und deren konjugierte Nullstellen",
+                 "Partialbruchzerlegung mit komplexen Polen und deren reelle Darstellung",
+                 "Zusammenfassung der Schritte für eine reelle Partialbruchzerlegung",
+                 "Ansatztermen für verschiedene Arten von Polen und Faktoren" ]
+}

@@ -1,0 +1,22 @@
+{
+   "titel": "Koordinatenabbildung und Matrixdarstellung lineare Abbildung",
+   "thema": "Die Koordinatenabbildung Kb ist eine lineare und bijektive Abbildung vom Vektorraum V in den K^n. Die Inverse der Koordinatenabbildung Kb^-1 kann durch einfache Koeffizientenvergleiche bestimmt werden.",
+   "tags": [
+      "Koordinatenabbildung",
+      "Matrixdarstellung",
+      "Lineare Abbildung",
+      "Bijektive Abbildung",
+      "Isomorphismus",
+      "Vektorraum",
+      "K^n",
+      "Lineare Algebra",
+      "Analysis 1"
+   ],
+   "wichtig": [
+      "Koordinatenabbildung Kb: V -> K^n",
+      "Kb(v) = Kb(lambda_1, ..., lambda_n) = lambda_1 * b_1 + ... + lambda_n * b_n",
+      "Inverse der Koordinatenabbildung Kb^-1",
+      "Kb^-1(lambda_1, ..., lambda_n) = lambda_1 * b_1 + ... + lambda_n * b_n",
+      "Lineare und bijektive Abbildung"
+   ]
+}

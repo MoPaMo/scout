@@ -1,0 +1,15 @@
+{
+   "titel": "Basis in Vektorräumen",
+   "thema": "Eine Basis in einem Vektorraum ermöglicht es, jeden Vektor eindeutig als Linearkombination der Basiselemente auszudrücken. Dies ist ein grundlegendes Konzept in der Linearen Algebra. Eine Basis ist ein linear unabhängiges Erzeugensystem und ermöglicht es, Koordinatenvektoren zu definieren.",
+   "tags": [
+      "Basis",
+      "Lineare Algebra",
+      "Vektorraum",
+      "Koordinatenvektor"
+   ],
+   "wichtig": [
+      "Eine Basis ist ein linear unabhängiges Erzeugensystem.",
+      "Jeder Vektor kann eindeutig als Linearkombination der Basiselemente ausgedrückt werden.",
+      "Der Koordinatenvektor eines Vektors ist eindeutig bestimmt."
+   ]
+}

@@ -1,0 +1,16 @@
+{
+   "titel":"Basiswechsel bei Koordinatenvektoren",
+   "thema":"Die Transformationsmatrix ermöglicht es, Koordinatenvektoren von einer Basis in eine andere umzurechnen. Es wird gezeigt, wie man diese Matrix bestimmt und wie sie angewendet wird.",
+   "tags":[
+      "Basiswechsel",
+      "Transformationsmatrix",
+      "Koordinatenvektoren",
+      "Lineare Algebra",
+      "Analysis 1"
+   ],
+   "wichtig":[
+      "Transformationsmatrix: KB2 ∘ KB1^(-1)",
+      "Basiswechselmatrix: T_B1^B2 = KB2 ∘ KB1^(-1)",
+      "Inverse der Transformationsmatrix: T_B2^B1 = (T_B1^B2)^(-1)"
+   ]
+}

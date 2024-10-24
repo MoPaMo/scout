@@ -1,0 +1,22 @@
+{
+   "titel":"Definitionen und Rechenregeln für komplexe Zahlen",
+   "thema":"In dieser Vorlesung werden die wichtigen Definitionen für komplexe Zahlen eingeführt, wie Realteil, Imaginärteil, komplex konjugierte Zahl und der Absolutbetrag. Außerdem werden die Rechenregeln für diese Definitionen vorgestellt.",
+   "tags":[
+      "Komplexe Zahlen",
+      "Realteil",
+      "Imaginärteil",
+      "Komplex konjugierte Zahl",
+      "Absolutbetrag",
+      "Rechenregeln"
+   ],
+   "wichtig":[
+      "Realteil von z = x, x ∈ R",
+      "Imaginärteil von z = y, y ∈ R",
+      "Komplex konjugierte Zahl zu z = x - iy",
+      "Absolutbetrag von z = √(x² + y²)",
+      "z = x + iy, x, y ∈ R",
+      "z quer = x - iy",
+      "z Betrag = √(z * z quer)",
+      "z Betrag = √(x² + y²)"
+   ]
+}

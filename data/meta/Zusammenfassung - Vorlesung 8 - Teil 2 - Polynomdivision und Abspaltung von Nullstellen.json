@@ -1,0 +1,19 @@
+{
+   "titel": "Polynom-Division und Rest",
+   "thema": "Division von Polynomen mit Rest, Abspaltung von Nullstellen und Vielfachheit von Nullstellen",
+   "tags":[
+      "Polynom-Division",
+      "Division mit Rest",
+      "Abspaltung von Nullstellen",
+      "Vielfachheit von Nullstellen",
+      "Analysis 1",
+      "Lineare Algebra"
+   ],
+   "wichtig":[
+      "P(Z) = S(Z) * Q(Z) + R(Z)",
+      "Der Grad von R ist kleiner als der Grad von Q",
+      "Wenn R = 0, dann ist die Division aufgegangen",
+      "Satz 3: Wenn P ein Polynom mit Grad N ≥ 1 ist und Z0 eine Nullstelle von P, dann gibt es ein Polynom S vom Grad N-1, so dass P(Z) = (Z-Z0) * S(Z)",
+      "Definition der Vielfachheit einer Nullstelle"
+   ]
+}

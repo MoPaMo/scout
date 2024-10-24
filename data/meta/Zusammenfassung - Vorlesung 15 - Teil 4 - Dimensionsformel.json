@@ -1,0 +1,21 @@
+{
+   "titel":"Dimensionsformel in der linearen Algebra",
+   "thema":"Die Dimensionsformel gilt für lineare Abbildungen zwischen Vektorräumen und besagt, dass die Dimension des Definitionsbereiches gleich der Summe der Dimension des Kerns und der Dimension des Bildes ist. Diese Formel ist wichtig für die lineare Algebra und hat Konsequenzen für die Begriffe Injektivität, Subjektivität und Bijektivität.",
+   "tags":[
+      "Dimensionsformel",
+      "lineare Algebra",
+      "Kern",
+      "Bild",
+      "Injektivität",
+      "Subjektivität",
+      "Bijektivität"
+   ],
+   "wichtig":[
+      "dim(Kern von F) + dim(Bild von F) = dim(V)",
+      "F injektiv ⇔ Kern von F = {0}",
+      "F subjektiv ⇔ Bild von F = W",
+      "F bijektiv ⇔ injektiv und subjektiv",
+      "dim(Kern von F) = 0 ⇔ F injektiv",
+      "dim(Bild von F) = dim(W) ⇔ F subjektiv"
+   ]
+}

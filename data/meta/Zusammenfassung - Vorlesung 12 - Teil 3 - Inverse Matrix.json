@@ -1,0 +1,18 @@
+{
+   "titel": "Inverse von Matrizen",
+   "thema": "Die Inverse einer quadratischen Matrix A ist eine Matrix B, sodass A * B = B * A = I ist, wobei I die Einheitsmatrix ist. Die Inverse wird mit A^(-1) bezeichnet. Eine quadratische Matrix A ist invertierbar, wenn es eine Matrix B gibt, sodass A * B = B * A = I ist. Die Inverse einer Matrix kann verwendet werden, um lineare Gleichungssysteme zu lösen.",
+   "tags": [
+      "Inverse von Matrizen",
+      "Invertierbare Matrizen",
+      "Lineare Gleichungssysteme",
+      "Matrixmultiplikation",
+      "Einheitsmatrix"
+   ],
+   "wichtig": [
+      "A * A^(-1) = A^(-1) * A = I",
+      "I ist die Einheitsmatrix",
+      "A^-1 ist die Inverse von A",
+      "(A * B)^-1 = B^-1 * A^-1",
+      "A * A^-1 = A^-1 * A = I"
+   ]
+}

@@ -1,0 +1,10 @@
+{
+   "titel": "Konvergenz von Zahlenfolgen",
+   "thema": "Die Konvergenz einer Zahlenfolge, Definition und Interpretation. Beispiele für konvergente und divergente Folgen.",
+   "tags": ["Konvergenz","Zahlenfolgen","Analysis 1", "Mathematik", "Ingenieurwissenschaften"],
+   "wichtig":  ["Limes N gegen unendlich, a n ist gleich a",
+                  "a n Pfeil nach a für n gegen unendlich",
+                  "a n gegen a",
+                  "Eine Folge a n heißt konvergent, falls a n einen Grenzwert hat.",
+                  "Eine Folge a n heißt divergent, falls sie nicht konvergent ist."]
+}

@@ -1,0 +1,13 @@
+{
+   "titel": "Zahlen und Zahlendarstellungen",
+   "thema": "In diesem Kapitel werden die natürlichen Zahlen, ganzen Zahlen, rationalen Zahlen, reellen Zahlen und komplexen Zahlen erklärt und deren Eigenschaften diskutiert. Es wird auch gezeigt, wie man Dezimalzahlen in Brüche umwandeln und wie man die reellen Zahlen als Menge aller Dezimalzahlen definiert.",
+   "tags": ["Zahlen und Zahlendarstellungen", "Natürliche Zahlen", "Ganze Zahlen", "Rationale Zahlen", "Reelle Zahlen", "Komplexe Zahlen", "Dezimalzahlen", "Brüche"],
+   "wichtig": [
+      "N = {0, 1, 2, 3, ...} (Natürliche Zahlen)",
+      "Z = {..., -3, -2, -1, 0, 1, 2, 3, ...} (Ganze Zahlen)",
+      "Q = {a/b | a, b ∈ Z, b ≠ 0} (Rationale Zahlen)",
+      "R = {...} (Reelle Zahlen)",
+      "C = {a + bi | a, b ∈ R} (Komplexe Zahlen)",
+      "a/b = c/d ⇔ ad = bc (Äquivalenz von Brüchen)"
+   ]
+}

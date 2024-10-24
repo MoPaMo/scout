@@ -1,0 +1,6 @@
+{
+   "titel": "Binominalkoeffizienten und das Pascal'sche Dreieck",
+   "thema": "Binominalkoeffizienten, Fakultät, Rekursionsformel, Pascal'sches Dreieck, Binomischer Leersatz",
+   "tags": ["Mathematik", "Analysis", "Lineare Algebra", "Binominalkoeffizienten", "Pascal'sches Dreieck", "Binomischer Leersatz"],
+   "wichtig": ["n über k = n Fakultät / (k Fakultät * (n-k) Fakultät)", "n über k = n über n-k", "Rekursionsformel: n über k = n-1 über k-1 + n-1 über k"]
+}

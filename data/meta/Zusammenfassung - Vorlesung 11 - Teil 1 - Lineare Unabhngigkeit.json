@@ -1,0 +1,16 @@
+{
+   "titel": "Lineare Unabhängigkeit und Basis in der linearen Algebra",
+   "thema": "In dieser Vorlesung wird der Begriff der linearen Unabhängigkeit und der Basis eingeführt. Es wird erklärt, wie man überprüfen kann, ob eine Menge von Vektoren linear unabhängig oder abhängig ist und wie man eine Basis konstruieren kann.",
+   "tags": [
+      "Lineare Algebra",
+      "Lineare Unabhängigkeit",
+      "Basis",
+      "Vektorraum",
+      "Erzeugungssystem"
+   ],
+   "wichtig": [
+      "Eine Menge von Vektoren ist linear unabhängig, wenn die Gleichung a1v1 + a2v2 + ... + anvn = 0 nur die triviale Lösung a1 = a2 = ... = an = 0 hat.",
+      "Eine Menge von Vektoren ist linear abhängig, wenn die Gleichung a1v1 + a2v2 + ... + anvn = 0 auch nicht-triviale Lösungen hat.",
+      "Eine Basis ist ein linear unabhängiges Erzeugungssystem."
+   ]
+}

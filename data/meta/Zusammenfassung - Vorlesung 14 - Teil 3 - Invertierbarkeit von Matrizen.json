@@ -1,0 +1,6 @@
+{
+   "titel": "Invertierbarkeit von Matrizen",
+   "thema": "Wir lernen, wie man die Inverse einer quadratischen Matrix bestimmt und wie man prüft, ob eine Matrix invertierbar ist. Wir werden auch sehen, wie man die Inverse einer 2x2-Matrix mit einer speziellen Formel berechnen kann.",
+   "tags": ["Invertierbarkeit", "Matrizen", "Lineare Algebra", "Inverse", "Gauss-Algorithmus"],
+   "wichtig": ["Eine quadratische Matrix A ist invertierbar, wenn es eine quadratische Matrix B gibt, sodass A * B = B * A = I", "Der Rang einer Matrix ist die maximale Anzahl linear unabhängiger Zeilen oder die maximale Anzahl linear unabhängiger Spalten der Matrix", "Eine Matrix A ist invertierbar, wenn und nur wenn der Rang von A gleich der Anzahl der Zeilen von A ist", "Die Inverse einer 2x2-Matrix kann mit der Formel A^(-1) = 1 / (AD - BC) * [D, -B; -C, A] berechnet werden"]
+}

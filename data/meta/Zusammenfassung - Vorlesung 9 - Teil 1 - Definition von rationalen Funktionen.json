@@ -1,0 +1,17 @@
+{
+   "titel": "Rationale Funktionen und Pole",
+   "thema": "Definition von rationalen Funktionen, Pole von rationalen Funktionen, Bestimmung der Ordnung von Polen",
+   "tags": [
+      "Rationale Funktionen",
+      "Pole",
+      "Ordnung von Polen",
+      "Polynomialdivision",
+      "Binomischer Leersatz"
+   ],
+   "wichtig": [
+      "Eine rationale Funktion ist ein Bruch von Polynomen",
+      "Pole sind die Nullstellen des Nenners",
+      "Ein Pol ist eine Nullstelle des Nenners, an der der Zähler ungleich Null ist",
+      "Die Ordnung eines Pols ist die Vielfachheit der Nullstelle im Nenner"
+   ]
+}

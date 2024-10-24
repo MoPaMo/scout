@@ -1,0 +1,18 @@
+{
+   "titel":"Komplexe Partialbruchzerlegung",
+   "thema":"In diesem Video wird die komplexe Partialbruchzerlegung einer rationalen Funktion F(Z) = P(Z)/Q(Z) erklärt, wobei P und Q Polynome sind. Die Zerlegung erfolgt in ein Polynom S und einfache rationale Funktionen.",
+   "tags":[
+      "Komplexe Partialbruchzerlegung",
+      "Rationale Funktionen",
+      "Polynome",
+      "Linearfaktorzerlegung",
+      "Zuhaltemethode"
+   ],
+   "wichtig":[
+      "Fundamentalsatz der Algebra",
+      "Linearfaktorzerlegung von Q",
+      "Partialbruchzerlegung: F(Z) = S(Z) + Summe (K/((Z-Zk)^Mk))",
+      "Zuhaltemethode zur Bestimmung der Koeffizienten",
+      "Koeffizientenvergleich zur Bestimmung der Koeffizienten"
+   ]
+}

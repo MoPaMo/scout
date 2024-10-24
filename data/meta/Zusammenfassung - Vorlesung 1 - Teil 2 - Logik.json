@@ -1,0 +1,6 @@
+{
+   "titel": "Aussagenlogik und Beweistechniken",
+   "thema": "Aussagenlogik und Beweistechniken. Eine Aussage ist etwas, dem ein Wahrheitswert zugeordnet werden kann. Aussagen können miteinander verknüpft werden. Es gibt verschiedene Arten von Verknüpfungen, wie Negation, Und-Verknüpfung, Oder-Verknüpfung, Implikation und Äquivalenz. Es gibt verschiedene Beweistechniken, wie logisches Folgern, Kontraposition und Beweis durch Widerspruch.",
+   "tags": ["Aussagenlogik", "Beweistechniken", "Negation", "Und-Verknüpfung", "Oder-Verknüpfung", "Implikation", "Äquivalenz"],
+   "wichtig": ["Eine Aussage ist etwas, dem ein Wahrheitswert zugeordnet werden kann.", "Negation: nicht A", "Und-Verknüpfung: A und B", "Oder-Verknüpfung: A oder B", "Implikation: A impliziert B", "Äquivalenz: A ist äquivalent zu B", "Kontraposition: nicht B impliziert nicht A", "Beweis durch Widerspruch: Annahme, dass A falsch ist, führt zu einem Widerspruch"]
+}

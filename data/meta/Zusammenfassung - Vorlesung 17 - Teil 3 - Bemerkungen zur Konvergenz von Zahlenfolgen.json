@@ -1,0 +1,18 @@
+{
+   "titel": "Konvergenz von Zahlenfolgen",
+   "thema": "Wir beschäftigen uns mit der Konvergenz von Zahlenfolgen, insbesondere mit der Definition und den Eigenschaften konvergenter Folgen. Wir betrachten auch komplexe Zahlenfolgen und diskutieren, wie man sprachlich aufpassen muss, wenn man über Konvergenz spricht.",
+   "tags": [
+      "Konvergenz",
+      "Zahlenfolgen",
+      "komplexe Zahlen",
+      "beschränkte Folgen",
+      "unbeschränkte Folgen",
+      "Divergenz"
+   ],
+   "wichtig": [
+      "Eine Folge (a_n) konvergiert genau dann gegen a, wenn zu jedem Epsilon > 0 ein N_Epsilon aus den natürlichen Zahlen existiert, sodass a_n - a < Epsilon für alle n >= N_Epsilon",
+      "Eine komplexe Zahlenfolge (a_n) konvergiert genau dann gegen a, wenn zu jedem Epsilon > 0 ein N_Epsilon aus den natürlichen Zahlen existiert, sodass |a_n - a| < Epsilon für alle n >= N_Epsilon",
+      "Konvergente Folgen sind immer beschränkt",
+      "Unbeschränkte Folgen sind immer divergent"
+   ]
+}

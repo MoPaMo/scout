@@ -1,0 +1,7 @@
+{
+   "titel": "Unterschiede zwischen Matrizen und Zahlen",
+   "thema": "Im Gegensatz zu reellen Zahlen gibt es bei Matrizen einige wesentliche Unterschiede, wie die nicht-kommutative Matrix-Multiplikation und die Tatsache, dass eine Matrix nicht automatisch invertierbar ist, wenn sie quadratisch und ungleich Null ist.",
+   "tags": ["Matrizen", "lineare Algebra", "Invertierbarkeit", "Matrix-Multiplikation", "Gauss-Algorithmus"],
+   "wichtig": ["Matrix-Multiplikation ist nicht kommutativ", "Eine quadratische Matrix ist nicht automatisch invertierbar", "Das Produkt zweier Matrizen kann Null sein, ohne dass eine der Matrizen Null ist", 
+   "Wenn das Produkt zweier Matrizen Null ist und eine der Matrizen ist invertierbar, dann ist die andere Matrix Null"]
+}

@@ -1,0 +1,16 @@
+{
+   "titel": "Matrixmultiplikation",
+   "thema": "Definition und Eigenschaften der Matrixmultiplikation, Rechenregeln und Beispiele",
+   "tags": [
+      "Matrixmultiplikation",
+      "Rechenregeln",
+      "Einheitsmatrix",
+      "Lineare Algebra"
+   ],
+   "wichtig": [
+      "Das Produkt von zwei Matrizen A und B existiert nur, wenn die Spaltenanzahl von A gleich der Zeilenanzahl von B ist.",
+      "Die Matrixmultiplikation ist nicht kommutativ, d.h. A mal B ist im Allgemeinen ungleich B mal A.",
+      "Bei quadratischen Matrizen gilt A mal I = A und I mal A = A, wobei I die Einheitsmatrix ist.",
+      "Die Rechenregeln für Matrixmultiplikation sind: (A mal B) mal C = A mal (B mal C) und A mal (B + C) = A mal B + A mal C"
+   ]
+}

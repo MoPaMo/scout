@@ -1,0 +1,16 @@
+{
+   "titel":"Basiswechsel bei Koordinatenvektoren und darstellenden Matrizen",
+   "thema":"In diesem Teil der Vorlesung wird gezeigt, wie man von einer Basis in einem Vektorraum zu einer anderen Basis übergeht und wie dies auf die Darstellung linearer Abbildungen durch Matrizen einfließt.",
+   "tags":[
+      "Lineare Algebra",
+      "Koordinatenabbildung",
+      "Matrixdarstellung",
+      "Basiswechsel",
+      "Darstellende Matrizen"
+   ],
+   "wichtig":[
+      "FB2C2 = C1 nach C2 * FB1C1 * B2 nach B1",
+      "FB2B2 = B1 nach B2 * FB1B1 * B2 nach B1",
+      "Transformationsmatrix B1 nach B2 = Inverse von B2 nach B1"
+   ]
+}

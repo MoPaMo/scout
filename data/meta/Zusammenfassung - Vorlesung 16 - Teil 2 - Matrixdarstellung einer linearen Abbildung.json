@@ -1,0 +1,16 @@
+{
+   "titel": "Lineare Abbildungen und Matrixdarstellungen",
+   "thema": "Lineare Abbildungen zwischen zwei Vektorräumen können durch Matrixabbildungen beschrieben werden. Eine Matrixdarstellung einer linearen Abbildung F von V nach W kann durch die Koordinatenabbildungen KB und KC bestimmt werden.",
+   "tags": [
+      "Lineare Abbildungen",
+      "Matrixdarstellungen",
+      "Koordinatenabbildungen",
+      "Vektorräume",
+      "Basiswechsel"
+   ],
+   "wichtig": [
+      "Eine lineare Abbildung F von V nach W kann durch eine Matrixdarstellung F_B_C beschrieben werden.",
+      "Die Spalten von F_B_C können durch die Standardbasisvektoren von V bestimmt werden.",
+      "Die Matrix F_B_C kann als F_B_C = K_C * F * K_B^(-1) geschrieben werden."
+   ]
+}

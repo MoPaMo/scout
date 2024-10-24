@@ -1,0 +1,20 @@
+{
+   "titel": "Umkehrbarkeit von Abbildungen und ihre Eigenschaften",
+   "thema": "Injektivität, Subjektivität, Bijektivität und Umkehrabbildungen. Ihre Bedeutung und Anwendung in der Mathematik.",
+   "tags": [
+      "Umkehrbarkeit",
+      "Injektivität",
+      "Subjektivität",
+      "Bijektivität",
+      "Umkehrabbildung",
+      "Mathematik",
+      "Analysis",
+      "Lineare Algebra"
+   ],
+   "wichtig": [
+      "Injektivität: f(x1) = f(x2) impliziert x1 = x2.",
+      "Subjektivität: Jedes Element im Wertebereich wird erreicht.",
+      "Bijektivität: Injektivität und Subjektivität.",
+      "Umkehrabbildung: F^-1(x) = y, wenn f(y) = x."
+   ]
+}

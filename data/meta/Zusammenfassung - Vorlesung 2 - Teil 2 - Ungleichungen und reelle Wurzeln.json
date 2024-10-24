@@ -1,0 +1,6 @@
+{
+   "titel": "Ungleichungen und Ordnungsrelationen auf den reellen Zahlen",
+   "thema": "Wir lernen, wie man Ungleichungen auf den reellen Zahlen löst und welche Rechenregeln dabei gelten. Außerdem werden wir uns mit der Ordnungsrelation auf den reellen Zahlen beschäftigen.",
+   "tags": ["Ungleichungen", "Ordnungsrelationen", "Reelle Zahlen", "Rechenregeln", "Quadratwurzel", "Entewurzel", "Arithmetisches Mittel", "Geometrisches Mittel"],
+   "wichtig": ["x kleiner y ist per Definition genau dann, wenn x kleiner y oder x gleich y", "x kleiner y und y kleiner z impliziert x kleiner z", "Multiplikation mit einer negativen Zahl ändert die Richtung einer Ungleichung", "Quadrate von reellen Zahlen sind nicht negativ", "x² ist größer 0, wenn x ungleich 0", "x² ist gleich 0, wenn x gleich 0", "(a+b)/2 ≥ √(ab)", "Wurzel 4 = 2 (nicht + oder -2)"]
+}

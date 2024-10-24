@@ -1,0 +1,17 @@
+{
+   "titel":"Elementare Zeilenoperationen und der Gauss-Algorithmus",
+   "thema":"Schritt-für-Schritt-Anleitung zur Anwendung des Gauss-Algorithmus zur Umformung einer Matrix in Zeilenstufenform, Definition von Zeilenstufenform und normierter Zeilenstufenform",
+   "tags":[
+      "Gauss-Algorithmus",
+      "Zeilenstufenform",
+      "Normierte Zeilenstufenform",
+      "Elementare Zeilenoperationen",
+      "Matrixumformung"
+   ],
+   "wichtig":[
+      "Elementare Zeilenoperationen: Vertauschen von Zeilen, Multiplikation einer Zeile mit einer Zahl ungleich Null, Addition eines Vielfachen einer Zeile zu einer anderen Zeile",
+      "Gauss-Algorithmus: Schritt-für-Schritt-Anleitung zur Umformung einer Matrix in Zeilenstufenform",
+      "Definition Zeilenstufenform: Eine Matrix ist in Zeilenstufenform, wenn die erste von Null verschiedene Spalte von links nach rechts erstellt wird, alle Pivot-Elemente normiert sind und alle Einträge über den Pivot-Elementen 0 sind",
+      "Normierte Zeilenstufenform: Eine Matrix ist in normierter Zeilenstufenform, wenn sie in Zeilenstufenform ist und alle Pivot-Elemente 1 sind"
+   ]
+}

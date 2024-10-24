@@ -1,0 +1,20 @@
+{
+   "titel": "Lineare Abbildungen",
+   "thema": "Lineare Abbildungen sind Funktionen zwischen Vektorräumen, die die Addition und Skalarmultiplikation erhalten. Sie können durch Matrizen dargestellt werden.",
+   "tags": [
+       "Lineare Abbildungen",
+       "Vektorräume",
+       "Matrizen",
+       "Linearität",
+       "Bijektivität",
+       "Umkehrabbildung"
+   ],
+   "wichtig": [
+       "f(x) = Ax",
+       "f(e_i) = a_i",
+       "f(x) = \u03BB_1a_1 + ... + \u03BB_na_n",
+       "f(0) = 0",
+       "f(g(x)) = f(g)(x)",
+       "f^(-1)(x) = f(x)^(-1)"
+   ]
+}

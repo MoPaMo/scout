@@ -1,0 +1,13 @@
+{
+   "titel": "Lösen von linearen Gleichungssystemen mit dem Gauss-Algorithmus",
+   "thema": "Lösen von linearen Gleichungssystemen AX = B mit dem Gauss-Algorithmus, indem die erweiterte Koeffizientenmatrix in Zeilenstufenform oder normierte Zeilenstufenform gebracht wird. Die Lösungsmenge kann dann durch Rückwärtssubstitution oder direktes Ablesen bestimmt werden.",
+   "tags": ["Gauss-Algorithmus", "lineare Gleichungssysteme", "erweiterte Koeffizientenmatrix", "Zeilenstufenform", "normierte Zeilenstufenform", "Rückwärtssubstitution"],
+   "wichtig": [
+      "AX = B (lineares Gleichungssystem)",
+      "erweiterte Koeffizientenmatrix = [A|B]",
+      "Gauss-Algorithmus: Überführung der erweiterten Koeffizientenmatrix in Zeilenstufenform oder normierte Zeilenstufenform",
+      "elementare Zeilenoperationen: Multiplikation mit einer Zahl, Addition von Zeilen, Vertauschung von Zeilen",
+      "Pivot-Elemente: erste von 0 verschiedene Einträge in jeder Spalte",
+      "Lösungsmenge: eindeutig bestimmt, keine Lösung, unendlich viele Lösungen"
+   ]
+}

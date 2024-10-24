@@ -1,0 +1,6 @@
+{
+   "titel": "Komplexe Wurzeln",
+   "thema": "Die Gleichung z hoch n gleich a hat genau n verschiedene Lösungen.",
+   "tags": ["Komplexe Zahlen", "Wurzeln", "Polardarstellung", "Euler-Darstellung"],
+   "wichtig": ["z^n = s e^(i (Alpha/n + 2pi k/n))", "e^(i pi) = -1", "Wurzel(d) = ±(Wurzel(|d|) e^(i (Arg(d)/2)))"]
+}

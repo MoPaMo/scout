@@ -1,0 +1,23 @@
+{
+   "titel":"Sinusschwingungen und harmonische Schwingungen",
+   "thema":"In diesem Teil der Vorlesung werden Sinusschwingungen und harmonische Schwingungen behandelt. Es wird gezeigt, wie die Parameter Amplitude, Frequenz und Phasenverschiebung die Sinusfunktion beeinflussen. Außerdem wird ein Beispiel für die Überlagerung von Schwingungen gleicher Frequenz behandelt und es wird gezeigt, wie diese als reine Cosinus- bzw. Sinus-Schwingung geschrieben werden kann.",
+   "tags":[
+      "Sinusschwingungen",
+      "harmonische Schwingungen",
+      "Amplitude",
+      "Frequenz",
+      "Phasenverschiebung",
+      "Überlagerung von Schwingungen"
+   ],
+   "wichtig":[
+      "a sin(ωx - ϕ)",
+      "Amplitude: a",
+      "Frequenz: ω",
+      "Phasenverschiebung: ϕ",
+      "Cos(φ) = x1",
+      "Sin(φ) = y1",
+      "x1² + y1² = 1",
+      "Cos(-φ + Ωx) = Cos(φ)Cos(Ωx) - Sin(φ)Sin(Ωx)",
+      "Sin(-φ + Ωx) = Sin(φ)Cos(Ωx) + Cos(φ)Sin(Ωx)"
+   ]
+}

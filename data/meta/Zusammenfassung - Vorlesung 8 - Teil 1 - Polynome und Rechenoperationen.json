@@ -1,0 +1,18 @@
+{
+   "titel" : "Polynome",
+   "thema" : "Polynome, Grad von Polynomen, Gradformel, Division von Polynomen, Polynom-Division, Nullstellen",
+   "tags" : [
+      "Polynom",
+      "Gradformel",
+      "Polynom-Division",
+      "Nullstellen",
+      "Lineare Algebra",
+      "Analysis 1"
+   ],
+   "wichtig" : [
+      "P(z) = a0 + a1z + a2z^2 + ... + anz^n",
+      "Der Grad eines Polynoms ist der höchste Koeffizient, der ungleich 0 ist",
+      "Gradformel: Grad(p*q) = Grad(p) + Grad(q)",
+      "Polynom-Division: p(z) = q(z)*t(z) + r(z)"
+   ]
+}

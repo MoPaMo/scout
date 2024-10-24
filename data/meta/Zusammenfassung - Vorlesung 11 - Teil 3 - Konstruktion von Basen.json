@@ -1,0 +1,17 @@
+{
+   "titel": "Konstruktion von Basen",
+   "thema": "Basen sind linear unabhängige Erzeugungssysteme. Es gibt zwei Fälle zur Konstruktion von Basen: Entweder man hat ein Erzeugungssystem und entfernt Vektoren, bis man eine Basis erhält, oder man hat eine Menge linear unabhängiger Vektoren und fügt neue Vektoren hinzu, bis man ein Erzeugungssystem erhält.",
+   "tags": [
+      "Basis",
+      "Erzeugungssystem",
+      "Lineare Unabhängigkeit",
+      "Vektorraum",
+      "Konstruktion von Basen"
+   ],
+   "wichtig": [
+      "Eine Basis ist ein linear unabhängiges Erzeugungssystem.",
+      "Die Dimension eines Vektorraums ist die Anzahl der Elemente in einer Basis.",
+      "Ein Erzeugungssystem kann zu einer Basis reduziert werden, indem man Vektoren entfernt, bis man eine Basis erhält.",
+      "Eine Menge linear unabhängiger Vektoren kann zu einer Basis erweitert werden, indem man neue Vektoren hinzufügt, bis man ein Erzeugungssystem erhält."
+   ]
+}

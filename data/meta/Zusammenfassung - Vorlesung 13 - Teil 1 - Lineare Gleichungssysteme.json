@@ -1,0 +1,6 @@
+{
+   "titel": "Lineare Gleichungssysteme",
+   "thema": "Definition und Darstellung von linearen Gleichungssystemen, Einführung in die Lösungsmethoden",
+   "tags": ["lineare Gleichungssysteme", "Matrix-Schreibweise", "Lösungsmenge", "Gauss-Algorithmus", "Zeilenstufenform"],
+   "wichtig": ["a x = b", "a: Koeffizientenmatrix", "x: Vektor der Unbekannten", "b: rechte Seite", "L: Lösungsmenge", "A^{-1} x = b (falls A invertierbar ist)"]
+}
