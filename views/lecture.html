@@ -1,0 +1,314 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SCOUT - Smart Course Organization & Universal Transcripts</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/"
+          ><img src="/logo_light.svg" alt="SCOUT" srcset="" />
+        </a>
+
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item"> Home </a>
+
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link"> More </a>
+
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="/about"> About </a>
+              <a class="navbar-item" href="/contact"> Contact </a>
+              <hr class="navbar-divider" />
+              <a
+                class="navbar-item"
+                href="https://github.com/MoPaMo/SCOUT"
+                target="_blank"
+              >
+                Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-primary">
+                <strong>Search</strong>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          // Get all "navbar-burger" elements
+          const $navbarBurgers = Array.prototype.slice.call(
+            document.querySelectorAll(".navbar-burger"),
+            0
+          );
+
+          // Add a click event on each of them
+          $navbarBurgers.forEach((el) => {
+            el.addEventListener("click", () => {
+              // Get the target from the "data-target" attribute
+              const target = el.dataset.target;
+              const $target = document.getElementById(target);
+
+              // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+              el.classList.toggle("is-active");
+              $target.classList.toggle("is-active");
+            });
+          });
+        });
+      </script>
+    </nav>
+    <div class="container has-text-dark">
+      <section class="section">
+        <div class="columns">
+          <div class="column is-narrow is-hidden-mobile">
+            <img
+              src="https://video.isis.tu-berlin.de/isisvideo/file?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImtpZCI6ImV4dCJ9.eyJ0eXBlIjoidGh1bWJuYWlsIiwiaGFzaCI6IjMyZDFiZDQyZjdiYjg5NTI5MTRmYjg3YWNhOWI3NTBhOTJiMWUzY2M1MmQ1ZjdiMmVhNTkzOWQ0YTQ1ZDYzNjYiLCJ0aHVtYl9pZCI6MSwiZmlsZV9leHQiOiIubXA0IiwiaXNzIjoiZXh0Iiwicm9sZSI6MCwicmlkIjoiMTcyLjIyNS4xODQuMTg1IiwiZXhwIjoxNzI5NzcxMjAwfQ.VzYnJqbERxZAX-ZX6sQp4UrY2UpYMVISLirbjHPbgRc"
+              alt="Video thumbnail"
+              class="image"
+            />
+          </div>
+          <div class="column">
+            <h1 class="title">VL 1 - Teil 3: Derivatives</h1>
+            <img
+              src="https://video.isis.tu-berlin.de/isisvideo/file?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImtpZCI6ImV4dCJ9.eyJ0eXBlIjoidGh1bWJuYWlsIiwiaGFzaCI6IjMyZDFiZDQyZjdiYjg5NTI5MTRmYjg3YWNhOWI3NTBhOTJiMWUzY2M1MmQ1ZjdiMmVhNTkzOWQ0YTQ1ZDYzNjYiLCJ0aHVtYl9pZCI6MSwiZmlsZV9leHQiOiIubXA0IiwiaXNzIjoiZXh0Iiwicm9sZSI6MCwicmlkIjoiMTcyLjIyNS4xODQuMTg1IiwiZXhwIjoxNzI5NzcxMjAwfQ.VzYnJqbERxZAX-ZX6sQp4UrY2UpYMVISLirbjHPbgRc"
+              alt="Video thumbnail"
+              class="image is-hidden-tablet"
+            />
+
+            <a class="tag is-primary is-light" onclick="copyLinkToClipboard()">
+              <i class="fas fa-link mr-1"></i>
+              Copy Link to Transcript
+            </a>
+            <script>
+              function copyLinkToClipboard() {
+                const link = window.location.href;
+                navigator.clipboard
+                  .writeText(link)
+                  .then(() => {
+                    alert("Link copied to clipboard!");
+                  })
+                  .catch((err) => {
+                    console.error("Failed to copy: ", err);
+                  });
+              }
+            </script>
+            <a class="tag is-primary is-light" onclick="sharePage()">
+              <i class="fas fa-arrow-up-from-bracket mr-1"></i>
+              Share
+            </a>
+            <script>
+              function sharePage() {
+                if (navigator.share) {
+                  navigator
+                    .share({
+                      title: document.title,
+                      url: window.location.href,
+                    })
+                    .then(() => {
+                      console.log("Thanks for sharing!");
+                    })
+                    .catch(console.error);
+                } else {
+                  alert("Web Share API is not supported in your browser.");
+                }
+              }
+            </script>
+          </div>
+          <div class="column is-narrow">
+            <a class="button is-primary is-fullwidth mb-2">
+              <i class="fas fa-play mr-1"></i>
+              Play Video
+            </a>
+            <a class="button is-dark is-fullwidth">
+              <i class="fas fa-scroll mr-1"></i>
+              Open Script
+            </a>
+          </div>
+        </div>
+        <div class="tags">
+          <span class="tag">Tangensfunktion</span>
+          <span class="tag">Sinusfunktion</span>
+          <span class="tag">Cosinusfunktion</span>
+          <span class="tag">Graphen</span>
+          <span class="tag">Funktionswerte</span>
+        </div>
+        <div class="columns is-reversed-mobile">
+          <div class="column">
+            <div class="content">
+              <h3>Transcript</h3>
+              <div id="transcript">
+                <div class="transcript-entry">
+                  <div class="columns is-mobile is-vcentered mb-2">
+                    <div class="column is-narrow">
+                      <span class="tag is-info">00:01 - 00:08</span>
+                    </div>
+                    <div class="column">
+                      <p>
+                        Herzlich willkommen zum dritten Teil der sechsten
+                        Vorlesung im Kurs Analyse 1 und Lineäre Algebra für
+                        Ingenieurwissenschaften.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="transcript-entry">
+                  <div class="columns is-mobile is-vcentered mb-2">
+                    <div class="column is-narrow">
+                      <span class="tag is-info">00:08 - 00:13</span>
+                    </div>
+                    <div class="column">
+                      <p>
+                        Wir hatten uns im zweiten Teil mit den Funktionen Sinus
+                        und Cosinus beschäftigt.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="transcript-entry">
+                  <div class="columns is-mobile is-vcentered mb-2">
+                    <div class="column is-narrow">
+                      <span class="tag is-info">00:13 - 00:19</span>
+                    </div>
+                    <div class="column">
+                      <p>
+                        Und die werden wir jetzt verwenden, um die
+                        Tangensfunktion einzuführen.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="transcript-entry">
+                  <div class="columns is-mobile is-vcentered mb-2">
+                    <div class="column is-narrow">
+                      <span class="tag is-info">00:19 - 00:21</span>
+                    </div>
+                    <div class="column">
+                      <p>Und das machen wir erstmal auf der E-Kreide.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="transcript-entry">
+                  <div class="columns is-mobile is-vcentered mb-2">
+                    <div class="column is-narrow">
+                      <span class="tag is-info">00:21 - 00:22</span>
+                    </div>
+                    <div class="column">
+                      <p>Und zwar wie folgt.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="transcript-entry">
+                  <div class="columns is-mobile is-vcentered mb-2">
+                    <div class="column is-narrow">
+                      <span class="tag is-info">00:22 - 00:29</span>
+                    </div>
+                    <div class="column">
+                      <p>
+                        Ich denke, dass den meisten der Tangens auch bekannt
+                        ist.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                  const transcript = document.getElementById("transcript");
+                  const searchBox = document.createElement("input");
+                  searchBox.type = "text";
+                  searchBox.placeholder = "Search transcript...";
+                  searchBox.classList.add("input", "mb-4");
+
+                  transcript.parentNode.insertBefore(searchBox, transcript);
+
+                  searchBox.addEventListener("input", () => {
+                    const query = searchBox.value.toLowerCase();
+                    const entries =
+                      transcript.getElementsByClassName("transcript-entry");
+
+                    Array.from(entries).forEach((entry) => {
+                      const text = entry.innerText.toLowerCase();
+                      if (text.includes(query)) {
+                        entry.style.display = "";
+                      } else {
+                        entry.style.display = "none";
+                      }
+                    });
+                  });
+                });
+              </script>
+            </div>
+          </div>
+          <div class="column is-one-fifth content">
+            <h4 class="mb-0">
+              <i class="fa-solid fa-wand-magic-sparkles"></i> AI Summary
+            </h4>
+
+            <div class="mb-4">
+              Die Tangensfunktion und ihre Eigenschaften. Definiert als Sinus x
+              durch Cosinus x. Berechnung von Funktionswerten und Graphen
+            </div>
+
+            <h4 class="mb-0">
+              <i class="fa-solid fa-square-root-variable"></i> Definitions
+            </h4>
+            <p class="has-text-grey-light mb-1">
+              AI generated, treat with caution
+            </p>
+            <div class="mb-4">
+              <table class="table is-fullwidth">
+                <tbody>
+                  <tr>
+                    <td>tan(x) = sin(x) / cos(x)</td>
+                  </tr>
+                  <tr>
+                    <td>Definitionsbereich: ℝ {π/2 + kπ, k ∈ ℤ}</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      tan(x + y) = (tan(x) + tan(y)) / (1 - tan(x) * tan(y))
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

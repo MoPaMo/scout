@@ -12,6 +12,14 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "views", "index.html"));
 });
 
+app.get("/search", (req, res) => {
+  //send index.html file
+  res.sendFile(path.join(__dirname, "views", "search.html"));
+});
+app.get("/lecture/abc", (req, res) => {
+  //send index.html file
+  res.sendFile(path.join(__dirname, "views", "lecture.html"));
+});
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });

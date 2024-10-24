@@ -1,0 +1,29 @@
+// Set your brand colors
+$aquamarine: #85ffc7ff;
+$myrtle-green: #297373ff;
+$coral: #ff8552ff;
+$platinum: #e6e6e6ff;
+$jet: #39393aff;
+
+
+// Path to Bulma's sass folder
+@use "bulma/sass" with (
+  $family-primary: '"Nunito", sans-serif',
+  $dark: $jet,            // Replacing brown with jet
+  $black: $platinum,      // Replacing beige-light with platinum
+  $primary: $coral,       // Replacing purple with aquamarine
+  $link: $aquamarine,   
+  $success: $myrtle-green,            // Replacing pink with coral
+  $control-border-width: 2px,
+  $input-shadow: none
+);
+
+  
+  @media(max-width: 800px) {
+    .columns.is-reversed-mobile {
+      flex-direction: column-reverse;
+      display: flex;
+    }
+  }
+// Import the Google Font
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");

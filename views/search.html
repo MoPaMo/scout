@@ -1,0 +1,241 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SCOUT - Smart Course Organization & Universal Transcripts</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/"
+          ><img src="/logo_light.svg" alt="SCOUT" srcset="" />
+        </a>
+
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item"> Home </a>
+
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link"> More </a>
+
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="/about"> About </a>
+              <a class="navbar-item" href="/contact"> Contact </a>
+              <hr class="navbar-divider" />
+              <a
+                class="navbar-item"
+                href="https://github.com/MoPaMo/SCOUT"
+                target="_blank"
+              >
+                Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-primary">
+                <strong>Search</strong>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          // Get all "navbar-burger" elements
+          const $navbarBurgers = Array.prototype.slice.call(
+            document.querySelectorAll(".navbar-burger"),
+            0
+          );
+
+          // Add a click event on each of them
+          $navbarBurgers.forEach((el) => {
+            el.addEventListener("click", () => {
+              // Get the target from the "data-target" attribute
+              const target = el.dataset.target;
+              const $target = document.getElementById(target);
+
+              // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+              el.classList.toggle("is-active");
+              $target.classList.toggle("is-active");
+            });
+          });
+        });
+      </script>
+    </nav>
+    <div class="container has-text-dark">
+      <section class="section">
+        <h1 class="title">Search Results</h1>
+        <div class="columns">
+          <div class="field has-addons column">
+            <div class="control">
+              <input class="input" type="text" placeholder="Find a topic " />
+            </div>
+            <div class="control">
+              <button class="button is-info">Search</button>
+            </div>
+          </div>
+          <div class="field column">
+            <div class="control">
+              <div class="select">
+                <select>
+                  <option>All</option>
+                  <option>Lecture Titles</option>
+                  <option>Topics</option>
+                  <option>Transcripts</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="box"
+          style="cursor: pointer"
+          onclick="handleCardClick(event)"
+        >
+          <div class="columns is-vcentered">
+            <div class="column is-2">
+              <img
+                src="https://video.isis.tu-berlin.de/isisvideo/file?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImtpZCI6ImV4dCJ9.eyJ0eXBlIjoidGh1bWJuYWlsIiwiaGFzaCI6IjMyZDFiZDQyZjdiYjg5NTI5MTRmYjg3YWNhOWI3NTBhOTJiMWUzY2M1MmQ1ZjdiMmVhNTkzOWQ0YTQ1ZDYzNjYiLCJ0aHVtYl9pZCI6MSwiZmlsZV9leHQiOiIubXA0IiwiaXNzIjoiZXh0Iiwicm9sZSI6MCwicmlkIjoiMTcyLjIyNS4xODQuMTg1IiwiZXhwIjoxNzI5NzcxMjAwfQ.VzYnJqbERxZAX-ZX6sQp4UrY2UpYMVISLirbjHPbgRc"
+                alt="Video thumbnail"
+                class="image"
+              />
+            </div>
+            <div class="column">
+              <h4 class="title is-4">VL 1 - Teil 3: Derivatives</h4>
+              <p class="subtitle is-6 tags">
+                <span class="tag">Tangensfunktion</span>
+                <span class="tag">Sinusfunktion</span>
+              </p>
+              <div class="content">
+                <p class="has-text-grey">
+                  "...here we discuss the concept of
+                  <mark>derivatives</mark> and their geometric
+                  interpretation..."
+                </p>
+                <div class="tags">
+                  <span class="tag is-info is-light">
+                    <i class="fas fa-clock mr-1"></i>
+                    23:45
+                  </span>
+                  <span class="tag is-info is-light">
+                    <i class="fa-regular fa-hourglass-half mr-1"></i>
+                    23:45
+                  </span>
+                  <a
+                    class="tag is-primary is-light"
+                    onclick="handleWatchClick(event)"
+                  >
+                    <i class="fas fa-play mr-1"></i>
+                    Watch segment
+                  </a>
+                  <a class="tag is-primary is-light">
+                    <i class="fas fa-person-chalkboard mr-1"></i>
+                    All Lecture Info
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="column is-one-fifth">
+              <span class="has-text-grey-light is-size-7">
+                Die Tangensfunktion und ihre Eigenschaften. Definiert als Sinus
+                x durch Cosinus x. Berechnung von Funktionswerten und
+                Graphen</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="columns is-vcentered">
+            <div class="column is-2">
+              <img
+                src="https://video.isis.tu-berlin.de/isisvideo/file?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImtpZCI6ImV4dCJ9.eyJ0eXBlIjoidGh1bWJuYWlsIiwiaGFzaCI6IjMyZDFiZDQyZjdiYjg5NTI5MTRmYjg3YWNhOWI3NTBhOTJiMWUzY2M1MmQ1ZjdiMmVhNTkzOWQ0YTQ1ZDYzNjYiLCJ0aHVtYl9pZCI6MSwiZmlsZV9leHQiOiIubXA0IiwiaXNzIjoiZXh0Iiwicm9sZSI6MCwicmlkIjoiMTcyLjIyNS4xODQuMTg1IiwiZXhwIjoxNzI5NzcxMjAwfQ.VzYnJqbERxZAX-ZX6sQp4UrY2UpYMVISLirbjHPbgRc"
+                alt="Video thumbnail"
+                class="image"
+              />
+            </div>
+            <div class="column">
+              <h4 class="title is-4">VL 1 - Teil 3: Derivatives</h4>
+              <p class="subtitle is-6 tags">
+                <span class="tag">Tangensfunktion</span>
+                <span class="tag">Sinusfunktion</span>
+              </p>
+              <div class="content">
+                <p class="has-text-grey">
+                  "...here we discuss the concept of
+                  <mark>derivatives</mark> and their geometric
+                  interpretation..."
+                </p>
+                <div class="tags">
+                  <span class="tag is-info is-light">
+                    <i class="fas fa-clock mr-1"></i>
+                    23:45
+                  </span>
+                  <span class="tag is-info is-light">
+                    <i class="fa-regular fa-hourglass-half mr-1"></i>
+                    23:45
+                  </span>
+                  <a class="tag is-primary is-light">
+                    <i class="fas fa-play mr-1"></i>
+                    Watch segment
+                  </a>
+                  <a class="tag is-primary is-light">
+                    <i class="fas fa-person-chalkboard mr-1"></i>
+                    All Lecture Info
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add more search results as needed -->
+      </section>
+      <script>
+        function handleCardClick(event) {
+          // Check if the click was on a button
+          if (!event.target.closest(".action-button")) {
+            // Navigate to detail page
+            console.log("Navigating to detail page");
+            alert("Navigating to detail page");
+            window.location.href = "/lecture/abc"; // Uncomment and add your URL
+          }
+        }
+
+        function handleWatchClick(event) {
+          event.stopPropagation(); // Prevent the card click event
+          console.log("Opening video player");
+          // Add your video player logic here
+          alert("Opening video player");
+        }
+
+        function handleInfoClick(event) {
+          event.stopPropagation(); // Prevent the card click event
+          console.log("Opening lecture info");
+          // Add your info panel logic here
+        }
+      </script>
+    </div>
+  </body>
+</html>
