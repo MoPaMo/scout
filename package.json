@@ -1,6 +1,12 @@
 {
     "main": "index.js",
     "dependencies": {
-        "express": "^4.21.1"
-    }
+        "bulma": "^1.0.2",
+        "express": "^4.21.1",
+        "sass": "^1.80.4"
+    },
+    "scripts": {
+        "build-bulma": "sass --load-path=node_modules my-bulma-project.scss my-bulma-project.css",
+        "start": "npm run build-bulma -- --watch"
+      }
 }
