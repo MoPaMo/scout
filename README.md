@@ -25,7 +25,7 @@ done
 
 
 Use e.g. [whisper-timestamped](https://github.com/linto-ai/whisper-timestamped) in CLI or [MacWhisper](https://goodsnooze.gumroad.com/l/macwhisper) with GUI, both locally with the `turbo` model, to transcribe audio.
-Export into .srt for timestamped transcripts and .txt for a general transcript.
+Export into .csv for timestamped transcripts and .txt for a general transcript.
 
 Process trarnscript using OSS models
 
