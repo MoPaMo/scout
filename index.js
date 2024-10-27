@@ -48,8 +48,25 @@ app.get("/lecture/:number/:part?/:name?", (req, res) => {
         // Parse tags and wichtig as arrays
         row.tags = JSON.parse(row.tags);
         row.wichtig = JSON.parse(row.wichtig);
-        //get lecture_
-        res.render("lecture", { ...row, name });
+        //get lecture_excerpts
+        db.all(
+          `SELECT * FROM lecture_excerpts WHERE lecture_id = ? `,
+          [row.id],
+          (err, excerpts) => {
+            if (err) {
+              console.error(err.message);
+              res.status(500).send("Internal Server Error");
+              return;
+            }
+            if (excerpts) {
+              // Parse tags and wichtig as arrays
+              console.log(excerpts, row.id);
+              res.render("lecture", { ...row, name, excerpts });
+            } else {
+              res.render("lecture404", { number, part, name });
+            }
+          }
+        );
       } else {
         res.render("lecture404", { number, part, name });
       }
