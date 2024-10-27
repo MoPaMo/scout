@@ -3,11 +3,12 @@
     "dependencies": {
         "bulma": "^1.0.2",
         "express": "^4.21.1",
+        "mustache": "^4.2.0",
         "sass": "^1.80.4"
     },
     "scripts": {
         "build-bulma": "sass --load-path=node_modules styles.scss ./public/style.css",
         "watch": "npm run build-bulma -- --watch",
         "start": "node index.js"
-      }
+    }
 }
