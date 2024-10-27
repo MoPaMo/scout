@@ -1,0 +1,40 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SCOUT - Smart Course Organization & Universal Transcripts</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+   {{> navbar}}
+    <div class="container has-text-dark">
+      <section class="hero is-large is-black">
+        <div class="hero-body">
+          <h1 class="title is-size-1">
+            <img
+              src="/logo.svg"
+              alt="SCOUT"
+              style="height: 1em; vertical-align: middle"
+            />
+          </h1>
+          <h2 class="subtitle has-text-dark">
+            Smart Course Organization & Universal Transcripts
+          </h2>
+          <form class="field has-addons" action="/search" method="get">
+            <div class="control">
+              <input
+                class="input"
+                type="text"
+                name="q"
+                placeholder="Find a lecture, topic or concept"
+              />
+            </div>
+            <div class="control">
+              <button class="button is-primary">Search</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

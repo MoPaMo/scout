@@ -1,6 +1,6 @@
 const express = require("express");
 const path = require("path");
-const Mustache = require("mustache");
+const mustacheExpress = require("mustache-express");
 const fs = require("fs");
 
 const app = express();
@@ -16,35 +16,20 @@ const db = new sqlite3.Database("sqlite3.db", (err) => {
   console.log("Connected to the lectures database.");
 });
 
-//load templates from views
-const templates = {};
-
-// Preload templates
-function preloadTemplates(templateDir) {
-  const files = fs.readdirSync(templateDir);
-
-  files.forEach((file) => {
-    const filePath = path.join(templateDir, file);
-    const templateName = path.basename(file, ".mustache");
-
-    templates[templateName] = fs.readFileSync(filePath, "utf8");
-  });
-}
-
-// Initialize templates on startup
-preloadTemplates("./views");
+app.engine("mustache", mustacheExpress());
+app.set("view engine", "mustache");
+app.set("views", __dirname + "/views");
 
 // Serve static files from the "public" directory
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {
   //send index.html file
-  res.sendFile(path.join(__dirname, "views", "index.html"));
+  res.render("index");
 });
 
 app.get("/search", (req, res) => {
-  //send index.html file
-  res.sendFile(path.join(__dirname, "views", "search.html"));
+  res.render("search");
 });
 
 app.get("/lecture/:number/:part?/:name?", (req, res) => {
@@ -63,9 +48,9 @@ app.get("/lecture/:number/:part?/:name?", (req, res) => {
         // Parse tags and wichtig as arrays
         row.tags = JSON.parse(row.tags);
         row.wichtig = JSON.parse(row.wichtig);
-        res.send(Mustache.render(templates.lecture, { ...row, name }));
+        res.render("lecture", { ...row, name });
       } else {
-        res.send(Mustache.render(templates.lecture404, { number, part, name }));
+        res.render("lecture404", { number, part, name });
       }
     }
   );
