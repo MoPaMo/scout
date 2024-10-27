@@ -2,7 +2,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SCOUT - Smart Course Organization & Universal Transcripts</title>
+    <title>VL {{lecture_number}} - Teil {{part_number}}: {{given_name}}  - SCOUT - Smart Course Organization & Universal Transcripts</title>
     <link rel="stylesheet" href="/style.css" />
     <link
       rel="stylesheet"
@@ -96,7 +96,7 @@
             />
           </div>
           <div class="column">
-            <h1 class="title">VL 1 - Teil 3: Derivatives</h1>
+            <h1 class="title">VL {{lecture_number}} - Teil {{part_number}}: {{given_name}}</h1>
             <img
               src="https://video.isis.tu-berlin.de/isisvideo/file?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImtpZCI6ImV4dCJ9.eyJ0eXBlIjoidGh1bWJuYWlsIiwiaGFzaCI6IjMyZDFiZDQyZjdiYjg5NTI5MTRmYjg3YWNhOWI3NTBhOTJiMWUzY2M1MmQ1ZjdiMmVhNTkzOWQ0YTQ1ZDYzNjYiLCJ0aHVtYl9pZCI6MSwiZmlsZV9leHQiOiIubXA0IiwiaXNzIjoiZXh0Iiwicm9sZSI6MCwicmlkIjoiMTcyLjIyNS4xODQuMTg1IiwiZXhwIjoxNzI5NzcxMjAwfQ.VzYnJqbERxZAX-ZX6sQp4UrY2UpYMVISLirbjHPbgRc"
               alt="Video thumbnail"
@@ -154,11 +154,9 @@
           </div>
         </div>
         <div class="tags">
-          <span class="tag">Tangensfunktion</span>
-          <span class="tag">Sinusfunktion</span>
-          <span class="tag">Cosinusfunktion</span>
-          <span class="tag">Graphen</span>
-          <span class="tag">Funktionswerte</span>
+        {{#tags}}
+          <span class="tag">{{.}}</span>
+        {{/tags}}
         </div>
         <div class="columns is-reversed-mobile">
           <div class="column">
@@ -275,12 +273,11 @@
           </div>
           <div class="column is-one-fifth content">
             <h4 class="mb-0">
-              <i class="fa-solid fa-wand-magic-sparkles"></i> AI Summary
+              <i class="fa-solid fa-wand-magic-sparkles"></i> Inhalt
             </h4>
 
             <div class="mb-4">
-              Die Tangensfunktion und ihre Eigenschaften. Definiert als Sinus x
-              durch Cosinus x. Berechnung von Funktionswerten und Graphen
+              {{thema}}
             </div>
 
             <h4 class="mb-0">
@@ -292,17 +289,11 @@
             <div class="mb-4">
               <table class="table is-fullwidth">
                 <tbody>
+                {{#wichtig}}
                   <tr>
-                    <td>tan(x) = sin(x) / cos(x)</td>
+                    <td>{{.}}</td>
                   </tr>
-                  <tr>
-                    <td>Definitionsbereich: ℝ {π/2 + kπ, k ∈ ℤ}</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      tan(x + y) = (tan(x) + tan(y)) / (1 - tan(x) * tan(y))
-                    </td>
-                  </tr>
+                  {{/wichtig}}
                 </tbody>
               </table>
             </div>

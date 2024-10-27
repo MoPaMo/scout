@@ -5,6 +5,16 @@ const fs = require("fs");
 
 const app = express();
 const port = 3000;
+//connect to sqlite3
+const sqlite3 = require("sqlite3").verbose();
+
+//open the database
+const db = new sqlite3.Database("sqlite3.db", (err) => {
+  if (err) {
+    console.error(err.message);
+  }
+  console.log("Connected to the lectures database.");
+});
 
 //load templates from views
 const templates = {};
@@ -39,9 +49,26 @@ app.get("/search", (req, res) => {
 
 app.get("/lecture/:number/:part?/:name?", (req, res) => {
   const { number, part = 1, name } = req.params;
-  console.log({ number, part, name });
-  //send index.html file
-  res.send(Mustache.render(templates.lecture, { number, part, name }));
+  // search for the lecture
+  db.get(
+    `SELECT * FROM lectures WHERE lecture_number = ? and part_number = ? `,
+    [number, part],
+    (err, row) => {
+      if (err) {
+        console.error(err.message);
+        res.status(500).send("Internal Server Error");
+        return;
+      }
+      if (row) {
+        // Parse tags and wichtig as arrays
+        row.tags = JSON.parse(row.tags);
+        row.wichtig = JSON.parse(row.wichtig);
+        res.send(Mustache.render(templates.lecture, { ...row, name }));
+      } else {
+        res.send(Mustache.render(templates.lecture404, { number, part, name }));
+      }
+    }
+  );
 });
 
 app.get("/about", (req, res) => {
