@@ -59,8 +59,6 @@ app.get("/lecture/:number/:part?/:name?", (req, res) => {
               return;
             }
             if (excerpts) {
-              // Parse tags and wichtig as arrays
-              console.log(excerpts, row.id);
               res.render("lecture", { ...row, name, excerpts });
             } else {
               res.render("lecture404", { number, part, name });
