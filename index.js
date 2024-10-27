@@ -48,6 +48,7 @@ app.get("/lecture/:number/:part?/:name?", (req, res) => {
         // Parse tags and wichtig as arrays
         row.tags = JSON.parse(row.tags);
         row.wichtig = JSON.parse(row.wichtig);
+        //get lecture_
         res.render("lecture", { ...row, name });
       } else {
         res.render("lecture404", { number, part, name });
