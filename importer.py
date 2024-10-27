@@ -28,7 +28,6 @@ def parse_filename(filename):
             return lecture_num, part_num, given_name
     
     # If none of the patterns match, try to extract information from any format
-    # that contains the required information
     lecture_match = re.search(r'Vorlesung\s*(\d+)', filename)
     part_match = re.search(r'Teil\s*(\d+)', filename)
     
@@ -38,10 +37,9 @@ def parse_filename(filename):
         
         # Extract the name by removing known parts
         name_parts = filename.split('-')
-        # Take the last part as the name, or if no parts, use the whole string
         given_name = name_parts[-1].strip() if len(name_parts) > 0 else filename
         
-        # Clean up the name by removing any "Vorlesung X" or "Teil Y" remnants
+        # Clean up the name
         given_name = re.sub(r'Vorlesung\s*\d+', '', given_name)
         given_name = re.sub(r'Teil\s*\d+', '', given_name)
         given_name = given_name.strip(' -')
@@ -49,6 +47,10 @@ def parse_filename(filename):
         return lecture_num, part_num, given_name
     
     raise ValueError(f"Filename '{filename}' doesn't match any expected pattern")
+
+def get_base_filename(filename):
+    """Remove 'Zusammenfassung - ' prefix from filename."""
+    return re.sub(r'^Zusammenfassung\s*-\s*', '', filename)
 
 def process_meta_file(file_path):
     """Process a JSON metadata file."""
@@ -76,12 +78,14 @@ def process_meta_file(file_path):
             'titel': data['titel'],
             'thema': data['thema'],
             'tags': data['tags'],
-            'wichtig': data['wichtig']
+            'wichtig': data['wichtig'],
+            'base_filename': get_base_filename(filename)  # Store the base filename for matching
         }
 
 def process_timestamped_file(file_path, lecture_id):
     """Process a CSV timestamped file."""
     excerpts = []
+    print(f"Processing timestamped file: {file_path}")
     with open(file_path, 'r', encoding='utf-8') as f:
         # Skip header
         next(f)
@@ -109,9 +113,6 @@ def import_data(db_path, data_dir):
     try:
         # Process each meta file
         for meta_file in meta_dir.glob('*.json'):
-            # Get base name without extension to match with timestamped file
-            base_name = meta_file.stem
-            
             # Process meta data
             meta_data = process_meta_file(meta_file)
             
@@ -139,10 +140,15 @@ def import_data(db_path, data_dir):
             
             lecture_id = cursor.lastrowid
             
-            # Look for corresponding timestamped file
-            timestamped_file = next(timestamped_dir.glob(f'{base_name}.*'), None)
+            # Look for corresponding timestamped file using the base filename
+            base_filename = meta_data['base_filename']
+            print(f"Looking for timestamped file matching: {base_filename}")
             
-            if timestamped_file:
+            # Try to find matching timestamped file
+            timestamped_files = list(timestamped_dir.glob(f"{base_filename}.*"))
+            if timestamped_files:
+                timestamped_file = timestamped_files[0]
+                print(f"Found matching timestamped file: {timestamped_file}")
                 excerpts = process_timestamped_file(timestamped_file, lecture_id)
                 
                 # Insert excerpts
@@ -156,6 +162,8 @@ def import_data(db_path, data_dir):
                         excerpt['start_time'],
                         excerpt['end_time']
                     ))
+            else:
+                print(f"No matching timestamped file found for: {base_filename}")
         
         conn.commit()
         print("Data import completed successfully")
