@@ -1,6 +1,0 @@
-{
-   "titel": "Komposition von Abbildungen",
-   "thema": "Die Komposition von Abbildungen erlaubt es, zwei Abbildungen nacheinander auszuführen. Wir erforschen die Voraussetzungen und Einschränkungen dieser Operation.",
-   "tags": ["Abbildungen", "Komposition", "Nacheinanderausführung", "Funktionen", "Mathematik", "Lineare Algebra", "Analysis 1"],
-   "wichtig": ["Nacheinanderausführung von Abbildungen: g ∘ f", "Voraussetzung: Wertebereich von f muss Definitionsbereich von g sein", "Funktionen sind im Allgemeinen nicht kommutativ"]
-}

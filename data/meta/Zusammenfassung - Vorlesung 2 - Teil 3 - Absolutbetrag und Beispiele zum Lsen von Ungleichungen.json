@@ -1,6 +1,0 @@
-{
-   "titel": "Absolutbetrag und Ungleichungen",
-   "thema": "Der Absolutbetrag einer reellen Zahl x ist definiert als x, wenn x >= 0, und als -x, wenn x < 0. Wir besprechen Eigenschaften des Absolutbetrags, wie die Dreiecksungleichung, und zeigen, wie man Ungleichungen mit Absolutbeträgen löst.",
-   "tags": ["Analysis 1", "Lineare Algebra", "Ungleichungen", "Absolutbetrag", "Dreiecksungleichung"],
-   "wichtig": ["|x| = x, wenn x >= 0", "|x| = -x, wenn x < 0", "|x| >= 0", "|x| = 0 genau dann, wenn x = 0", "|x| = |y| genau dann, wenn x = y oder x = -y", "|x + y| <= |x| + |y|", "|x - y| >= ||x| - |y||"]
-}

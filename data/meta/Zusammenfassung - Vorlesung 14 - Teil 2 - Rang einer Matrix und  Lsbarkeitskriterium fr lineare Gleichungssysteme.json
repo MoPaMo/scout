@@ -1,6 +1,0 @@
-{
-   "titel": "Rang einer Matrix und Lösbarkeitskriterium für lineare Gleichungssysteme",
-   "thema": "Der Rang einer Matrix gibt die maximale Anzahl von linear unabhängigen Spalten oder Zeilen an. Das Lösbarkeitskriterium für lineare Gleichungssysteme hängt vom Rang der Matrix und der erweiterten Koeffizientenmatrix ab.",
-   "tags": ["Rang einer Matrix","Lösbarkeitskriterium","Lineare Gleichungssysteme","Gauss-Algorithmus"],
-   "wichtig": ["Rang(A) = Anzahl der Zeilen ungleich 0 in einer Zeilenstufenform von A","Rang(A) = maximale Anzahl von linear unabhängigen Spalten/Zeilen","Rang(A-B) > Rang(A) => Keine Lösung","Rang(A-B) = Rang(A) = N => Eindeutige Lösung","Rang(A-B) = Rang(A) < N => Unendlich viele Lösungen"]
-}

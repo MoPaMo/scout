@@ -1,6 +1,0 @@
-{
-   "titel" : "Struktur der Lösungsmenge eines linearen Gleichungssystems",
-   "thema" : "Struktur der Lösungsmenge von homogenen und inhomogenen linearen Gleichungssystemen, Teilraumkriterium, Lösungsmenge des homogenen Systems.",
-   "tags" : ["lineare Gleichungssysteme", "Teilraumkriterium", "Lösungsmenge des homogenen Systems", "Gauss-Algorithmus"],
-   "wichtig" : ["Teilraumkriterium", "Lösungsmenge des homogenen Systems", "AX = B", "XP + Lösungsmenge des homogenen Systems", "Rang einer Matrix"]
-}

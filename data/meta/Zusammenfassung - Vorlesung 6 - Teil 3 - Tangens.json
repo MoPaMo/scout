@@ -1,6 +1,0 @@
-{
-   "titel": "Einführung in die Tangensfunktion",
-   "thema": "Die Tangensfunktion und ihre Eigenschaften. Definiert als Sinus x durch Cosinus x. Berechnung von Funktionswerten und Graphen.", 
-   "tags": ["Tangensfunktion", "Sinusfunktion", "Cosinusfunktion", "Graphen", "Funktionswerte"],
-   "wichtig": ["tan(x) = sin(x) / cos(x)", "Definitionsbereich: ℝ  {π/2 + kπ, k ∈ ℤ}", "tan(x + y) = (tan(x) + tan(y)) / (1 - tan(x) * tan(y))"]
-}

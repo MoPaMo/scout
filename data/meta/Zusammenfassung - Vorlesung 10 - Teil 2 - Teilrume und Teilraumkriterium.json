@@ -1,6 +1,0 @@
-{
-   "titel": "Teilräume und Untervektorräume",
-   "thema": "In dieser Vorlesung wurden Teilräume und Untervektorräume behandelt. Ein Teilraum ist eine Teilmenge eines Vektorraums, die selbst ein Vektorraum ist. Es wurde auch das Teilraumkriterium vorgestellt, das besagt, dass eine Teilmenge genau dann ein Teilraum ist, wenn sie nicht leer ist, abgeschlossen unter Addition und Skalarmultiplikation ist.",
-   "tags": ["Analysis 1", "Lineare Algebra", "Teilräume", "Untervektorräume", "Vektorräume"],
-   "wichtig": ["Teilraumkriterium", "Addition und Skalarmultiplikation sind abgeschlossen", "Null ist enthalten", "Jede Gerade durch den Nullpunkt ist ein Teilraum von R2", "Jede Ebene durch den Nullpunkt ist ein Teilraum von R3"]
-}

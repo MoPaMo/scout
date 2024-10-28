@@ -1,6 +1,0 @@
-{
-   "titel": "Komplexe Zahlen in Polardarstellung",
-   "thema": "Umwandlung von komplexen Zahlen in Polarkoordinaten, Multiplikation von komplexen Zahlen in Polardarstellung und Euler-Darstellung",
-   "tags": ["Komplexe Zahlen", "Polarkoordinaten", "Euler-Darstellung", "Multiplikation", "Wurzeln"],
-   "wichtig": ["|Z| = √(x² + y²)", "arg(Z) = arctan(y/x)", "e^(iφ) = cos(φ) + i sin(φ)", "Z = R * e^(iφ)"]
-}
